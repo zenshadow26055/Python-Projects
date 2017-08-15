@@ -27,6 +27,7 @@ def decision2_1(user_response):
 	elif user_response == 2:
 		print("You awaken the alien and it looks around. It speaks to you gently in a language that is not from Earth. What do you do?")
 		user_response = int(input("1. Try to use sign language to explain the situation. \n2. Back away and try to leave the spaceship. \n3. Try to speak to it in English."))
+		decision2_2(user_response)
 	elif user_response == 3:
 		print("You try to leave, but accidentally activate a security protocol that initiates a self destruct sequence and you explode.")
 		#user_response = int(input("1.option one\n2.option two\n3.option three"))
@@ -41,8 +42,10 @@ def decision2_2(user_response):
 		#user_response = int(input("1.option one\n2.option two\n3.option three"))
 	elif user_response == 3:
 		print("The alien does not understand you, but shows a face of realization, pulls out a device, and turns it on. He turns a knob on the device in the direction of an image of what looks like a human profile. Suddenly, he speaks to you and the device translates his speech into English. He asks you to help him pull out any shards of glass in his skin and treat his injuries. What do you do?")
-		user_response = int(input("1. Tend to his injuries. \n2. Ask if he has any first aid items or anything that can help. \n3. Rush home to grab a first aid kit."))
-
+		user_response = int(input("1. Tend to his injuries. \n2. Ask if he has any first aid items or anything that can help. \n3. Rush home to grab a first aid kit."))  
+		decision2_3(user_response)
+  
+    
 def decision2_3(user_response):
 #	print("This would be the story continuing after the user's second response")
 	if user_response == 1:
